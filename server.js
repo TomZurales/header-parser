@@ -13,7 +13,7 @@ app.get('/', function(req, res){
   res.render('index');
 });
 
-app.get('/', function(req, res){
+app.get('/parser', function(req, res){
    res.writeHead(200, {'Content-Type': 'application/json'});
    ip = req.headers['x-forwarded-for'];
    language = req.headers['accept-language'].split(',')[0];
